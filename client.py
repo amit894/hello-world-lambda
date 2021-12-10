@@ -1,12 +1,9 @@
-import requests
+import tweepy
+from tweepy import OAuthHandler
 
 
-def get_content(tag):
-    url="https://medium.com/tag/"+tag
-    r=requests.get(url)
-    print(r.status_code)
-    print(r.url)
-    print(r.content)
-    return r
-
-get_content("devops")
+def send_tweet(body)
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth)
+    api.update_status(status=body)
