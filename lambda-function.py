@@ -1,5 +1,5 @@
 import json
-from client import send_tweet
+from twitter_client import send_tweet
 
 
 print('Loading function')
